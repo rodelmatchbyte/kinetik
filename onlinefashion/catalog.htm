@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="css/fonts.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<title></title>
+</head>
+
+<body class="catalog_body">
+<img src="images/catalogue-fullwidth-M-shirts.jpg" height="530px" width:"200%" alt="" class="bg_image">
+<header id="page_header" class="page_header"></header>
+
+<section class="catalog_main_section">
+	<header>
+		<ul class="breadcrumb" id="breadcrumb"></ul>
+	</header>
+
+	<div class="catalog_detail">
+		<div>
+			<div class="image_showcase float_left">
+				<img id="catalogImage" src="" alt="">
+			</div>
+			
+			<div class="product_info float_left">
+				<span id="brand" class="brand"></span>
+				<span id="name" class="name"></span>
+				<div class="brand_logo_container"><img id="brandLogo" src="" alt=""></div>
+				<div id="description" class="description"></div>
+				<div class="size_info">
+					<div>
+						<span class="choose_your_size">Choose your size</span>
+						<span class="highlight size_guide">SIZE GUIDE</span>
+					</div>
+					<ul>
+						<li>S</li>
+						<li>M</li>
+						<li>L</li>
+						<li>XL</li>
+						<li>XXL</li>
+						<li>XXXl</li>
+					</ul>
+				</div>
+			</div>
+			
+			<div class="price_info float_left">
+				<span>Price</span>
+				<span class="display">$<span id="price">49.99</span></span>
+				<div id="btnAdd" class="large_button">ADD TO BAG</div>
+			</div>
+			
+		</div>
+		
+		<div class="tabbed_detail">
+			<ul id="tabCtrl">
+				<li class="selected_tab">Details</li>
+				<li>Brand Information</li>
+				<li>Product Reviews</li>
+			</ul>
+			
+			<div id="detailsPanel" class="panel">
+				<span>Details for</span>
+				<span id="detailsBrand"></span>
+				<span id="detailsName"></span>
+				<table>
+					<tr><td>SKU</td><td id="detailsSku"></td></tr>
+					<tr><td>Color</td><td>Neutral</td></tr>
+					<tr><td>Care label</td><td>Warm machine wash. Do not bleach. Dry without delay. Do not tumble dry.Warm iron on reverse side. Do not dry steam.</td></tr>
+					<tr><td>Size of model's garment</td><td>M</td></tr>
+					<tr><td>Composition</td><td>100% cotton</td></tr>
+				</table>
+			</div>
+			
+			<div id="brandInfoPanel" class="panel brand_info_panel">
+				<div>Brand information</div>
+				<img id="brandInfoLogo" src="" alt="">
+			</div>
+			
+			<div id="reviewsPanel" class="panel reviews_panel">
+				<div>
+					Reviews for <span class="reviews_brand" id="reviewsBrand"></span>
+					<span class="reviews_name" id="reviewsName"></span>
+				</div>
+				<div>Reviews(0)</div>
+				<div class="highlight first_to_review">BE THE FIRST TO REVIEW</div>
+			</div>
+		</div>
+		
+	</div><!-- catalog_detail -->
+</section>
+
+
+<footer class="page_footer" id="page_footer"></footer>
+
+<div id="overlay" class="overlay">
+	<div id="overlayContent"></div>
+</div>
+
+<script src="js/tools.js"></script>
+<script src="js/ajax.js"></script>
+<script src="js/common.js"></script>
+<script src="js/products.js"></script>
+<script src="js/session.js"></script>
+<script src="js/catalog.js"></script>
+<script src="js/cart.js"></script>
+</body>
+
+
+</html>

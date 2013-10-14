@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="css/fonts.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<title>Shopping Bag</title>
+</head>
+
+<body class="shopping_bag">
+
+<img src="images/catalogue-fullwidth-M-shirts.jpg" height="530px" width:"200%" alt="" class="bg_image">
+
+<header id="page_header" class="page_header"></header>
+
+<section class="shopping_main_section">
+	<header>
+		Shopping Bag
+	</header>
+	<table class="table_items">
+		<thead>
+			<tr>
+				<th>Item Description</th>
+				<th>Details</th>
+				<th>Estimated Shipping</th>
+				<th>Price</th>
+			</tr>
+		</thead>
+		<tbody id="tblItems"></tbody>
+	</table>
+	
+	<div>
+		<ul class="payment_methods">
+			<li>
+				<div>Full security</div>
+				<img src="images/paypal.png" alt="">
+				<img src="images/vseal.png" alt="">
+			</li>
+			
+			<li>
+				<div>Payment methods</div>
+				<img src="images/icon-payment-method.png" alt="">
+			</li>
+		</ul>
+		
+		<table class="price_summary">
+			<tbody>
+				<tr><td>Discount:</td><td>AUD</td><td>$0.00</td></tr>
+				<tr><td>Sub Total:</td><td>AUD</td><td>$<span id="priceSummarySubtotal">0.00</span></td></tr>
+				<tr><td>Gift Wrapping:</td><td>AUD</td><td>$0.00</td></tr>
+				<tr><td>Shipping:</td><td>AUD</td><td>$0.00</td></tr>
+				<tr><td>Total:</td><td>AUD</td><td>$<span id="priceSummaryGrandTotal">0.00</span></td></tr>
+				<tr><td colspan=3>Including GST</td></tr>
+			</tbody>
+		</table>
+		
+	</div>
+	
+	<div class="payment_processors">
+		<input id="btnBuyNow" class="large_button" type="button" value="BUY NOW"> 
+		or
+		<img src="images/paypal_checkout.png" alt="">
+	</div>
+	
+	<div class="questions_about_order">
+		<div>Questions about your order?</div>
+		<div>Please feel free to contact us. our customer service team will help you.</div>
+	</div>
+	
+</section>
+
+<footer class="page_footer" id="page_footer"></footer>
+
+<div id="paymentOverlay" class="payment_overlay">
+	<div id="paymentOverlayContent" class="payment_overlay_content"></div>
+</div>
+
+<script src="js/tools.js"></script>
+<script src="js/ajax.js"></script>
+<script src="js/common.js"></script>
+<script src="js/products.js"></script>
+<script src="js/session.js"></script>
+<script src="js/cart.js"></script>
+<script src="js/shoppingbag.js"></script>
+<script src="js/checkout.js"></script>
+
+</body
+
+
+</html>

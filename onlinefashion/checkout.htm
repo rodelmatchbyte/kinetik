@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="css/fonts.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<title>Online Fashion</title>
+</head>
+
+<body class="checkout">
+
+	<div class="horizontal_bar">&nbsp;</div>
+	<section>
+
+		<img class="logo" src="images/logo.png">
+		<h1>CHECKOUT</h1>
+		<h2>Secure credit card payment</h2>
+
+		<div class="info cc_number">
+			<div>Credit card number</div>
+			<input id="txtCc" type="text" value="The 16 digits on the front of your credit card">
+			<span class="mastercard">&nbsp;</span>
+			<span class="visa">&nbsp;</span>
+			<span class="american_express">&nbsp;</span>
+		</div>
+		
+		<div class="info">
+			<div>Name on the card</div>
+			<input id="txtCcName" type="text" value="The name in the front of your credit card">
+		</div>
+		
+		<div class="info">
+			<div>Expiration date</div>
+			<select>
+				<option>Month</option>
+				<option>January</option>
+				<option>February</option>
+				<option>March</option>
+				<option>April</option>
+				<option>May</option>
+				<option>June</option>
+				<option>July</option>
+				<option>August</option>
+				<option>September</option>
+				<option>October</option>
+				<option>November</option>
+				<option>December</option>
+			</select>
+			<select>
+				<option>Year</option>
+				<option>2013</option>
+				<option>2014</option>
+				<option>2015</option>
+				<option>2016</option>
+				<option>2017</option>
+				<option>2018</option>
+				<option>2019</option>
+				<option>2020</option>
+				<option>2021</option>
+				<option>2022</option>
+				<option>2023</option>
+			</select>
+		</div>
+		
+		<div class="info security_code">
+			<div>Security Code/CCV</div>
+			<div>
+			The last 3 digits displayed on the back of your credit card. Or in the front of your American Express card.</div>
+			<span class="ccv">&nbsp;</span>
+			<input id="txtCcv" type="text" value="3 or 4 digits">
+		</div>
+		
+		<div class="info continue">
+			<input class="large_button" type="button" value="Continue" id="btnContinue">
+		</div>
+	</section>
+
+<div id="paymentOverlay" class="payment_overlay">
+</div>
+
+<script src="js/tools.js"></script>
+<script src="js/ajax.js"></script>
+<script src="js/products.js"></script>
+<script src="js/session.js"></script>
+<script src="js/cart.js"></script>
+<script src="js/checkout.js"></script>
+
+</body
+
+
+</html>

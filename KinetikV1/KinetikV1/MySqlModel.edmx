@@ -1,0 +1,259 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="kinetikModel.Store" Alias="Self" Provider="MySql.Data.MySqlClient" ProviderManifestToken="5.6" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+        <EntityContainer Name="kinetikModelStoreContainer">
+          <EntitySet Name="account" EntityType="kinetikModel.Store.account" store:Type="Tables" Schema="kinetik" />
+          <EntitySet Name="commerce" EntityType="kinetikModel.Store.commerce" store:Type="Tables" Schema="kinetik" />
+          <EntitySet Name="log" EntityType="kinetikModel.Store.log" store:Type="Tables" Schema="kinetik" />
+          <EntitySet Name="offer" EntityType="kinetikModel.Store.offer" store:Type="Tables" Schema="kinetik" />
+          <EntitySet Name="session" EntityType="kinetikModel.Store.session" store:Type="Tables" Schema="kinetik" />
+          <EntitySet Name="setting" EntityType="kinetikModel.Store.setting" store:Type="Tables" Schema="kinetik" />
+        </EntityContainer>
+        <EntityType Name="account">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="uint" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="email" Type="varchar" MaxLength="45" />
+          <Property Name="category" Type="varchar" MaxLength="45" />
+          <Property Name="logo" Type="varchar" MaxLength="45" />
+          <Property Name="password" Type="varchar" MaxLength="45" />
+          <Property Name="created" Type="datetime" />
+          <Property Name="status" Type="varchar" MaxLength="45" />
+          <Property Name="name" Type="varchar" MaxLength="45" />
+        </EntityType>
+        <EntityType Name="commerce">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="uint" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="detail" Type="varchar" MaxLength="4096" />
+          <Property Name="fulfillmentStatus" Type="varchar" MaxLength="45" />
+          <Property Name="date" Type="datetime" />
+          <Property Name="checkoutId" Type="varchar" MaxLength="45" />
+        </EntityType>
+        <EntityType Name="log">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="uint" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="source" Type="varchar" MaxLength="45" />
+          <Property Name="content" Type="varchar" MaxLength="1024" />
+          <Property Name="date" Type="datetime" />
+        </EntityType>
+        <EntityType Name="offer">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="uint" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="title" Type="varchar" MaxLength="45" />
+          <Property Name="start" Type="datetime" />
+          <Property Name="end" Type="datetime" />
+          <Property Name="imageUrl" Type="varchar" MaxLength="45" />
+          <Property Name="offerType" Type="varchar" MaxLength="45" />
+          <Property Name="stores" Type="varchar" MaxLength="45" />
+          <Property Name="text" Type="varchar" MaxLength="45" />
+          <Property Name="demog" Type="varchar" MaxLength="45" />
+          <Property Name="method" Type="varchar" MaxLength="45" />
+          <Property Name="offerDetail" Type="varchar" MaxLength="45" />
+          <Property Name="date" Type="datetime" />
+          <Property Name="accountId" Type="uint" Nullable="false" />
+        </EntityType>
+        <EntityType Name="session">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="uint" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="accountId" Type="uint" Nullable="false" />
+          <Property Name="hash" Type="varchar" MaxLength="45" />
+          <Property Name="date" Type="datetime" />
+        </EntityType>
+        <EntityType Name="setting">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="uint" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="key" Type="varchar" MaxLength="45" />
+          <Property Name="value" Type="varchar" MaxLength="1024" />
+        </EntityType>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="kinetikModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+        <EntityContainer Name="kinetikEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="commerces" EntityType="kinetikModel.commerce" />
+          <EntitySet Name="logs" EntityType="kinetikModel.log" />
+          <EntitySet Name="offers" EntityType="kinetikModel.offer" />
+          <EntitySet Name="accounts" EntityType="kinetikModel.account" />
+          <EntitySet Name="settings" EntityType="kinetikModel.setting" />
+          <EntitySet Name="sessions" EntityType="kinetikModel.session" />
+        </EntityContainer>
+        <EntityType Name="commerce">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="detail" Type="String" MaxLength="2048" Unicode="false" FixedLength="false" />
+          <Property Name="fulfillmentStatus" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+          <Property Type="DateTime" Name="date" />
+          <Property Type="String" Name="checkoutId" MaxLength="45" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="log">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="source" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+          <Property Name="content" Type="String" MaxLength="256" Unicode="false" FixedLength="false" />
+          <Property Type="DateTime" Name="date" />
+        </EntityType>
+        <EntityType Name="offer">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="title" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+          <Property Name="start" Type="DateTime" />
+          <Property Name="end" Type="DateTime" />
+          <Property Name="imageUrl" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+          <Property Name="offerType" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+          <Property Name="stores" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+          <Property Name="text" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+          <Property Name="demog" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+          <Property Name="method" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+          <Property Name="offerDetail" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+          <Property Type="DateTime" Name="date" />
+          <Property Type="Int64" Name="accountId" Nullable="false" />
+        </EntityType>
+        <EntityType Name="account">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Type="Int64" Name="id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="email" MaxLength="45" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="category" MaxLength="45" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="logo" MaxLength="45" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="password" MaxLength="45" FixedLength="false" Unicode="false" />
+          <Property Type="DateTime" Name="created" />
+          <Property Type="String" Name="status" MaxLength="45" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="name" MaxLength="45" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="setting">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Type="Int64" Name="id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="key" MaxLength="45" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="value" MaxLength="1024" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="session">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Type="Int64" Name="id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="Int64" Name="accountId" Nullable="false" />
+          <Property Type="DateTime" Name="date" />
+          <Property Type="String" Name="hash" MaxLength="45" FixedLength="false" Unicode="false" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="kinetikModelStoreContainer" CdmEntityContainer="kinetikEntities">
+          <EntitySetMapping Name="commerces"><EntityTypeMapping TypeName="kinetikModel.commerce"><MappingFragment StoreEntitySet="commerce">
+            <ScalarProperty Name="checkoutId" ColumnName="checkoutId" />
+                <ScalarProperty Name="date" ColumnName="date" />
+                <ScalarProperty Name="id" ColumnName="id" />
+            <ScalarProperty Name="detail" ColumnName="detail" />
+            <ScalarProperty Name="fulfillmentStatus" ColumnName="fulfillmentStatus" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="logs"><EntityTypeMapping TypeName="kinetikModel.log"><MappingFragment StoreEntitySet="log">
+            <ScalarProperty Name="date" ColumnName="date" />
+                <ScalarProperty Name="id" ColumnName="id" />
+            <ScalarProperty Name="source" ColumnName="source" />
+            <ScalarProperty Name="content" ColumnName="content" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="offers"><EntityTypeMapping TypeName="kinetikModel.offer"><MappingFragment StoreEntitySet="offer">
+                <ScalarProperty Name="accountId" ColumnName="accountId" />
+                <ScalarProperty Name="date" ColumnName="date" />
+                <ScalarProperty Name="id" ColumnName="id" />
+            <ScalarProperty Name="title" ColumnName="title" />
+            <ScalarProperty Name="start" ColumnName="start" />
+            <ScalarProperty Name="end" ColumnName="end" />
+            <ScalarProperty Name="imageUrl" ColumnName="imageUrl" />
+            <ScalarProperty Name="offerType" ColumnName="offerType" />
+            <ScalarProperty Name="stores" ColumnName="stores" />
+            <ScalarProperty Name="text" ColumnName="text" />
+            <ScalarProperty Name="demog" ColumnName="demog" />
+            <ScalarProperty Name="method" ColumnName="method" />
+            <ScalarProperty Name="offerDetail" ColumnName="offerDetail" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="accounts">
+            <EntityTypeMapping TypeName="kinetikModel.account">
+              <MappingFragment StoreEntitySet="account">
+                <ScalarProperty Name="name" ColumnName="name" />
+                <ScalarProperty Name="status" ColumnName="status" />
+                <ScalarProperty Name="created" ColumnName="created" />
+                <ScalarProperty Name="password" ColumnName="password" />
+                <ScalarProperty Name="logo" ColumnName="logo" />
+                <ScalarProperty Name="category" ColumnName="category" />
+                <ScalarProperty Name="email" ColumnName="email" />
+                <ScalarProperty Name="id" ColumnName="id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="settings">
+            <EntityTypeMapping TypeName="kinetikModel.setting">
+              <MappingFragment StoreEntitySet="setting">
+                <ScalarProperty Name="value" ColumnName="value" />
+                <ScalarProperty Name="key" ColumnName="key" />
+                <ScalarProperty Name="id" ColumnName="id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="sessions">
+            <EntityTypeMapping TypeName="kinetikModel.session">
+              <MappingFragment StoreEntitySet="session">
+                <ScalarProperty Name="hash" ColumnName="hash" />
+                <ScalarProperty Name="date" ColumnName="date" />
+                <ScalarProperty Name="accountId" ColumnName="accountId" />
+                <ScalarProperty Name="id" ColumnName="id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="True" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams>
+      <Diagram Name="MySqlModel">
+        <EntityTypeShape EntityType="kinetikModel.commerce" Width="1.5" PointX="0.75" PointY="0.75" Height="1.59568359375" IsExpanded="true" />
+        <EntityTypeShape EntityType="kinetikModel.log" Width="1.5" PointX="2.75" PointY="0.75" Height="1.5956835937499996" IsExpanded="true" />
+        <EntityTypeShape EntityType="kinetikModel.offer" Width="1.5" PointX="0.75" PointY="3.75" Height="3.5186979166666656" IsExpanded="true" />
+        <EntityTypeShape EntityType="kinetikModel.account" Width="1.5" PointX="3.375" PointY="3.75" Height="2.3648893229166656" />
+        <EntityTypeShape EntityType="kinetikModel.setting" Width="1.5" PointX="5.375" PointY="0.75" Height="1.5956835937499996" />
+        <EntityTypeShape EntityType="kinetikModel.session" Width="1.5" PointX="5.375" PointY="3.75" Height="1.7879850260416665" />
+      </Diagram>
+    </Diagrams>
+  </Designer>
+</edmx:Edmx>

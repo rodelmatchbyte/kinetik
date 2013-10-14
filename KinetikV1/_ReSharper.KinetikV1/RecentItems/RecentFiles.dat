@@ -1,0 +1,66 @@
+﻿<RecentFiles>
+  <RecentFiles>
+    <File id="D2DF80F1-3DED-48B5-8008-E38C6D316A62/d:App_Start/f:RouteConfig.cs" caret="0" fromTop="0" />
+    <File id="D2DF80F1-3DED-48B5-8008-E38C6D316A62/d:Domain/d:Interfaces/f:ILogger.cs" caret="248" fromTop="10" />
+    <File id="D2DF80F1-3DED-48B5-8008-E38C6D316A62/d:Domain/d:Models/f:Offer.cs" caret="457" fromTop="15" />
+    <File id="D2DF80F1-3DED-48B5-8008-E38C6D316A62/d:Domain/d:Extensions/f:OfferExtension.cs" caret="0" fromTop="0" />
+    <File id="D2DF80F1-3DED-48B5-8008-E38C6D316A62/d:Domain/d:Services/f:FileLogger.cs" caret="434" fromTop="16" />
+    <File id="D2DF80F1-3DED-48B5-8008-E38C6D316A62/d:Tools/f:Crypto.cs" caret="508" fromTop="14" />
+    <File id="D2DF80F1-3DED-48B5-8008-E38C6D316A62/d:Tools/f:FileUploader.cs" caret="600" fromTop="17" />
+    <File id="D2DF80F1-3DED-48B5-8008-E38C6D316A62/d:Tools/f:ImageResizer.cs" caret="327" fromTop="12" />
+    <File id="D2DF80F1-3DED-48B5-8008-E38C6D316A62/d:Domain/d:Services/f:Setting.cs" caret="332" fromTop="10" />
+    <File id="D2DF80F1-3DED-48B5-8008-E38C6D316A62/d:Repository/f:SettingRepository.cs" caret="190" fromTop="2" />
+    <File id="D2DF80F1-3DED-48B5-8008-E38C6D316A62/d:Repository/f:AccountRepository.cs" caret="2135" fromTop="0" />
+    <File id="D2DF80F1-3DED-48B5-8008-E38C6D316A62/d:Domain/d:Extensions/f:AccountExtension.cs" caret="764" fromTop="23" />
+    <File id="D2DF80F1-3DED-48B5-8008-E38C6D316A62/d:Tools/f:StringExtension.cs" caret="1385" fromTop="39" />
+    <File id="D2DF80F1-3DED-48B5-8008-E38C6D316A62/d:Domain/d:Services/f:MySqlLogger.cs" caret="559" fromTop="20" />
+    <File id="D2DF80F1-3DED-48B5-8008-E38C6D316A62/d:Repository/f:MySqlRepository.cs" caret="0" fromTop="0" />
+    <File id="D2DF80F1-3DED-48B5-8008-E38C6D316A62/d:Controllers/f:AccountController.cs" caret="631" fromTop="13" />
+    <File id="D2DF80F1-3DED-48B5-8008-E38C6D316A62/d:Tools/f:ValueFromJson.cs" caret="673" fromTop="22" />
+    <File id="D2DF80F1-3DED-48B5-8008-E38C6D316A62/d:Repository/f:ShopifyRepository.cs" caret="1717" fromTop="10" />
+    <File id="D2DF80F1-3DED-48B5-8008-E38C6D316A62/d:Tools/f:EF.cs" caret="591" fromTop="21" />
+    <File id="D2DF80F1-3DED-48B5-8008-E38C6D316A62/d:Repository/f:SessionRepository.cs" caret="1458" fromTop="33" />
+    <File id="D2DF80F1-3DED-48B5-8008-E38C6D316A62/d:Domain/d:Interfaces/f:IRepository.cs" caret="890" fromTop="24" />
+    <File id="D2DF80F1-3DED-48B5-8008-E38C6D316A62/f:MySqlModel.Designer.cs" caret="38761" fromTop="12" />
+    <File id="D2DF80F1-3DED-48B5-8008-E38C6D316A62/d:Domain/d:Models/f:Account.cs" caret="190" fromTop="8" />
+    <File id="D2DF80F1-3DED-48B5-8008-E38C6D316A62/d:Controllers/f:HomeController.cs" caret="0" fromTop="0" />
+    <File id="D2DF80F1-3DED-48B5-8008-E38C6D316A62/f:Web.config" caret="0" fromTop="0" />
+    <File id="D2DF80F1-3DED-48B5-8008-E38C6D316A62/d:Controllers/f:ReceiptController.cs" caret="381" fromTop="0" />
+    <File id="D2DF80F1-3DED-48B5-8008-E38C6D316A62/d:App_Start/f:WebApiConfig.cs" caret="964" fromTop="30" />
+    <File id="D2DF80F1-3DED-48B5-8008-E38C6D316A62/d:Controllers/f:ShopifyController.cs" caret="821" fromTop="20" />
+    <File id="D2DF80F1-3DED-48B5-8008-E38C6D316A62/d:Controllers/f:OfferController.cs" caret="649" fromTop="13" />
+    <File id="D2DF80F1-3DED-48B5-8008-E38C6D316A62/d:Controllers/f:LoginController.cs" caret="849" fromTop="30" />
+  </RecentFiles>
+  <RecentEdits>
+    <File id="D2DF80F1-3DED-48B5-8008-E38C6D316A62/d:Repository/f:SessionRepository.cs" caret="1964" fromTop="23" />
+    <File id="D2DF80F1-3DED-48B5-8008-E38C6D316A62/d:Repository/f:SessionRepository.cs" caret="2121" fromTop="15" />
+    <File id="D2DF80F1-3DED-48B5-8008-E38C6D316A62/d:Repository/f:SessionRepository.cs" caret="1624" fromTop="20" />
+    <File id="D2DF80F1-3DED-48B5-8008-E38C6D316A62/d:Repository/f:SessionRepository.cs" caret="1378" fromTop="19" />
+    <File id="D2DF80F1-3DED-48B5-8008-E38C6D316A62/d:Repository/f:SessionRepository.cs" caret="1624" fromTop="8" />
+    <File id="D2DF80F1-3DED-48B5-8008-E38C6D316A62/d:Controllers/f:AccountController.cs" caret="2631" fromTop="17" />
+    <File id="D2DF80F1-3DED-48B5-8008-E38C6D316A62/d:Controllers/f:AccountController.cs" caret="3044" fromTop="28" />
+    <File id="D2DF80F1-3DED-48B5-8008-E38C6D316A62/d:Controllers/f:AccountController.cs" caret="3245" fromTop="34" />
+    <File id="D2DF80F1-3DED-48B5-8008-E38C6D316A62/d:Controllers/f:ShopifyController.cs" caret="711" fromTop="17" />
+    <File id="D2DF80F1-3DED-48B5-8008-E38C6D316A62/d:Controllers/f:ShopifyController.cs" caret="412" fromTop="5" />
+    <File id="D2DF80F1-3DED-48B5-8008-E38C6D316A62/d:Controllers/f:ShopifyController.cs" caret="832" fromTop="19" />
+    <File id="D2DF80F1-3DED-48B5-8008-E38C6D316A62/d:Repository/f:ShopifyRepository.cs" caret="1728" fromTop="16" />
+    <File id="D2DF80F1-3DED-48B5-8008-E38C6D316A62/d:Controllers/f:ShopifyController.cs" caret="1179" fromTop="34" />
+    <File id="D2DF80F1-3DED-48B5-8008-E38C6D316A62/d:Controllers/f:ReceiptController.cs" caret="4310" fromTop="22" />
+    <File id="D2DF80F1-3DED-48B5-8008-E38C6D316A62/d:Controllers/f:ReceiptController.cs" caret="2829" fromTop="27" />
+    <File id="D2DF80F1-3DED-48B5-8008-E38C6D316A62/d:Controllers/f:ReceiptController.cs" caret="4281" fromTop="34" />
+    <File id="D2DF80F1-3DED-48B5-8008-E38C6D316A62/d:Controllers/f:ReceiptController.cs" caret="4281" fromTop="32" />
+    <File id="D2DF80F1-3DED-48B5-8008-E38C6D316A62/d:Controllers/f:ReceiptController.cs" caret="3305" fromTop="17" />
+    <File id="D2DF80F1-3DED-48B5-8008-E38C6D316A62/d:Controllers/f:ReceiptController.cs" caret="4030" fromTop="26" />
+    <File id="D2DF80F1-3DED-48B5-8008-E38C6D316A62/d:App_Start/f:WebApiConfig.cs" caret="1229" fromTop="29" />
+    <File id="D2DF80F1-3DED-48B5-8008-E38C6D316A62/d:App_Start/f:WebApiConfig.cs" caret="1151" fromTop="26" />
+    <File id="D2DF80F1-3DED-48B5-8008-E38C6D316A62/d:Controllers/f:ReceiptController.cs" caret="2844" fromTop="22" />
+    <File id="D2DF80F1-3DED-48B5-8008-E38C6D316A62/d:Controllers/f:ReceiptController.cs" caret="4308" fromTop="33" />
+    <File id="D2DF80F1-3DED-48B5-8008-E38C6D316A62/d:Controllers/f:ReceiptController.cs" caret="2545" fromTop="25" />
+    <File id="D2DF80F1-3DED-48B5-8008-E38C6D316A62/d:Controllers/f:ReceiptController.cs" caret="2353" fromTop="33" />
+    <File id="D2DF80F1-3DED-48B5-8008-E38C6D316A62/d:Controllers/f:ReceiptController.cs" caret="2321" fromTop="34" />
+    <File id="D2DF80F1-3DED-48B5-8008-E38C6D316A62/d:Controllers/f:ReceiptController.cs" caret="711" fromTop="14" />
+    <File id="D2DF80F1-3DED-48B5-8008-E38C6D316A62/d:Controllers/f:ReceiptController.cs" caret="1008" fromTop="20" />
+    <File id="D2DF80F1-3DED-48B5-8008-E38C6D316A62/d:Controllers/f:ReceiptController.cs" caret="1364" fromTop="27" />
+    <File id="D2DF80F1-3DED-48B5-8008-E38C6D316A62/d:Tools/f:ValueFromJson.cs" caret="649" fromTop="19" />
+  </RecentEdits>
+</RecentFiles>

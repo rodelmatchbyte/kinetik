@@ -1,0 +1,48 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+    <body>
+
+        <div>
+            <input type="button" value="Show Offers" onclick="ShowOffers()"/>
+            <ul id="offers"></ul>
+        </div>
+
+        <div>
+            Title: <input type="text" id="inpTitle" /><br/>
+            Start: <input type="text" id="inpStart" /><br/>
+            End: <input type="text" id="inpEnd" /><br/>
+
+            <form name="upload" method="POST" action="" enctype="multipart/form-data">
+                Image: <input type="file" name="inpImageUrl" id="inpImageUrl" /><br/>
+            </form>
+            <iframe id="upload_target" name="upload_target" src="" style="width:0;height:0;border:0px solid #fff;"></iframe>
+
+            <input type="button" value="Add" id="btnAdd" onclick="AddOffer()"/><br/>
+            <span id="addOfferStatus"></span>
+        </div>
+        
+        <div>
+            <input type="text" id="offerId"/>
+            <input type="button" id="btnShow" value="Show" onclick="ShowOffer()"/>
+            <input type="button" id="btnDelete" value="Delete" onclick="DeleteOffer()" />
+        </div>
+        
+        <div>
+            <input type='button' id="btnTestShopify" value='Test Shopify WS' onclick="TestShopify()"/>
+
+        </div>
+
+        @Scripts.Render("~/bundles/offer")
+
+    </body>
+   
+</html>
